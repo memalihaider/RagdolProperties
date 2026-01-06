@@ -308,7 +308,7 @@ export default function AgentListClient() {
 
             <div className="max-w-4xl mx-auto">
               <div className="glass p-2 rounded-2xl flex flex-col md:flex-row gap-2">
-                <div className="relative flex-grow">
+                <div className="relative grow">
                   <MagnifyingGlassIcon className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400" />
                   <input
                     type="text"
@@ -397,7 +397,7 @@ export default function AgentListClient() {
                               const parent = img.parentElement
                               if (parent) {
                                 parent.innerHTML = `
-                                  <div class="w-full h-full flex items-center justify-center bg-gradient-to-br from-primary/10 to-primary/5">
+                                  <div class="w-full h-full flex items-center justify-center 'bg-gradient-to-br' from-primary/10 to-primary/5">
                                     <div class="text-4xl font-bold text-primary opacity-50">
                                       ${initials}
                                     </div>
@@ -408,14 +408,14 @@ export default function AgentListClient() {
                           />
                         ) : (
                           <div 
-                            className="w-full h-full flex items-center justify-center bg-gradient-to-br from-primary/10 to-primary/5"
+                            className="w-full h-full flex items-center justify-center 'bg-gradient-to-br' from-primary/10 to-primary/5"
                           >
                             <div className="text-4xl font-bold text-primary opacity-50">
                               {initials}
                             </div>
                           </div>
                         )}
-                        <div className="absolute inset-0 bg-gradient-to-t from-secondary/80 via-transparent to-transparent opacity-60 group-hover:opacity-80 transition-opacity"></div>
+                        <div className="absolute inset-0 'bg-gradient-to-t' from-secondary/80 via-transparent to-transparent opacity-60 group-hover:opacity-80 transition-opacity"></div>
                         
                         {/* Experience Badge */}
                         <div className="absolute top-4 right-4 bg-primary text-secondary text-xs font-bold px-3 py-1.5 rounded-full shadow-lg">
@@ -620,7 +620,7 @@ export default function AgentListClient() {
             {/* Modal Content */}
             <div className="p-0">
               {/* Header with Image */}
-              <div className="relative h-64 md:h-80 bg-gradient-to-r from-primary/20 to-secondary/20">
+              <div className="relative h-64 md:h-80 'bg-gradient-to-r' from-primary/20 to-secondary/20">
                 {getProfileImage(selectedAgent) ? (
                   <img
                     src={getProfileImage(selectedAgent)}
@@ -628,13 +628,13 @@ export default function AgentListClient() {
                     className="w-full h-full object-cover"
                   />
                 ) : (
-                  <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-primary/10 to-primary/5">
+                  <div className="w-full h-full flex items-center justify-center 'bg-gradient-to-br' from-primary/10 to-primary/5">
                     <div className="text-6xl font-bold text-primary opacity-50">
                       {getInitials(selectedAgent.title)}
                     </div>
                   </div>
                 )}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+                <div className="absolute inset-0 'bg-gradient-to-t' from-black/60 via-transparent to-transparent" />
                 
                 {/* Agent Title */}
                 <div className="absolute bottom-0 left-0 right-0 p-6">
@@ -805,7 +805,7 @@ export default function AgentListClient() {
                   {/* Right Column - Detailed Information */}
                   <div className="lg:col-span-2 space-y-8">
                     {/* Rating & Reviews */}
-                    <div className="bg-gradient-to-r from-primary/5 to-secondary/5 rounded-xl p-6">
+                    <div className="'bg-gradient-to-r' from-primary/5 to-secondary/5 rounded-xl p-6">
                       <div className="flex flex-col md:flex-row md:items-center justify-between mb-6">
                         <div>
                           <h3 className="text-xl font-bold text-secondary mb-2">Agent Rating</h3>
